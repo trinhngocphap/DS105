@@ -1,0 +1,35 @@
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+h1 {
+    font-family: 'Acme';font-size: 40px;
+}
+h2 {
+    font-family: 'Acme';font-size: 40px;
+}
+</style>
+</head>
+{%if data == 'PLEASE ENTER A VALUE!'%}
+<body bgcolor="#F76978 ">
+{%else%}
+<body bgcolor="#DAF7A6">
+{%endif%}
+    <div style="text-align: center;">
+        {%if data == 'PLEASE ENTER A VALUE!'%}
+        <h1> {{ data }} </h1>
+        {%else%}
+        <h2> PREDICTION: {{ data }} </h2><br><br>
+        {%endif%}
+    <a href='/'>go back to home page</a>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
